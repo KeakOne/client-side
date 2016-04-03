@@ -9,6 +9,6 @@ xhr.get(query, function(err, data) {
   if (err) console.log(err) // do something
 
   console.log(data.body)
-  document.body.innerHTML = example({ name: "Space" });
+  document.body.innerHTML = example({ name: "iss" });
 })
 
