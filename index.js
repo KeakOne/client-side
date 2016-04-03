@@ -14,7 +14,7 @@ xhr.get(query, function(err, data) {
   document.body.innerHTML = example({ name: "fluffy" });
 })
 
-app.use('/v1/cats', cats);
+app.use('http://localhost:3000/v1/cats', cats);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
