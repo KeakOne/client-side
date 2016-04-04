@@ -13,7 +13,7 @@ $(document).ready(function(){
           var body = JSON.parse(data.body)
 
         console.log(body)
-        document.results.innerHTML = Satellite({ name: "Satellite " + body.name, lat: body.latitude, lon: body.longitude, });
+        document.getElementById("results").innerHTML = Satellite({ name: "Satellite " + body.name, lat: body.latitude, lon: body.longitude, });
 
         // document.main.innerHTML = '<div>' + body.name + ', ' + lat: body.latitude  + ', ' + lon: body.longitude + "</div>" });
       })
