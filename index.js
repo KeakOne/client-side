@@ -1,5 +1,5 @@
 var xhr = require('xhr')
-var Satellite= require('./views/Satellite.hbs')
+var Satellite = require('./views/Satellite.hbs')
 var $ = require("jquery")
 
 //var button =document.getElementsByTagName("a");
@@ -14,7 +14,9 @@ $(document).ready(function(){
           var body = JSON.parse(data.body)
 
         console.log(body)
-        document.body.innerHTML = Satellite({ name: "Satellite " + body.name, lat: body.latitude, lon: body.longitude, });
+        document.main.innerHTML = Satellite({ name: "Satellite " + body.name, lat: body.latitude, lon: body.longitude, });
+
+        // document.main.innerHTML = '<div>' + body.name + ', ' + lat: body.latitude  + ', ' + lon: body.longitude + "</div>" });
       })
   })
 
