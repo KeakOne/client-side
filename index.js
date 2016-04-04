@@ -13,9 +13,8 @@ $(document).ready(function(){
           var body = JSON.parse(data.body)
 
         console.log(body)
-        document.getElementById("main").innerHTML = Satellite({ name: "Satellite " + body.name, lat: body.latitude, lon: body.longitude, });
-
-        // document.main.innerHTML = '<div>' + body.name + ', ' + lat: body.latitude  + ', ' + lon: body.longitude + "</div>" });
+        document.getElementById("results").innerHTML = "ben is mean"
+        //Satellite({ name: "Satellite " + body.name, lat: body.latitude, lon: body.longitude, });
       })
   })
 
