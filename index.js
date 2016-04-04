@@ -12,9 +12,8 @@ $(document).ready(function(){
         if (err) console.log(err) // do something
           var body = JSON.parse(data.body)
 
-        console.log(document.getElementById("results"))
-        // document.getElementById("results").innerHTML = "ben is mean"
-        //Satellite({ name: "Satellite " + body.name, lat: body.latitude, lon: body.longitude, });
+        console.log(body)
+        document.getElementById("main").innerHTML = Satellite({ name: "Satellite " + body.name, lat: body.latitude, lon: body.longitude, });
       })
   })
 
