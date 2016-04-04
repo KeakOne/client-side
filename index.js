@@ -10,10 +10,10 @@ $(document).ready(function(){
   $("#thebutton").click(function(){
      xhr.get('https://api.wheretheiss.at/v1/satellites/25544', function(err, data) {
         if (err) console.log(err) // do something
-          var body = JSON.parse(data.body)
-
+        var body = JSON.parse(data.body)
+        var satelliteInfo = { name: "Satellite " + body.name, lat: body.latitude, lon: body.longitude, }
         console.log(body)
-        document.getElementById("results").innerHTML = Satellite({ name: "Satellite " + body.name, lat: body.latitude, lon: body.longitude, });
+        document.getElementById("results").innerHTML = Satellite(satelliteInfo);
       })
   })
 
