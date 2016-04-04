@@ -1,5 +1,6 @@
 var xhr = require('xhr')
 var Satellite= require('./views/Satellite.hbs')
+var jquery = require("jquery")
 //var button =document.getElementsByTagName("a");
 var tx = "b6f6991d03df0e2e04dafffcd6bc418aac66049e2cd74b80f14ac86db1e3f0da";
 //var query = "https://blockchain.info/rawtx/"+tx+"/$tx_hash";
