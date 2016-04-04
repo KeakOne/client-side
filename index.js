@@ -9,7 +9,6 @@ var tx = "b6f6991d03df0e2e04dafffcd6bc418aac66049e2cd74b80f14ac86db1e3f0da";
 $(document).ready(function(){
   $("#thebutton").click(function(){
      xhr.get('https://api.wheretheiss.at/v1/satellites/25544', function(err, data) {
-             console.log("hi");
         if (err) console.log(err) // do something
           var body = JSON.parse(data.body)
 
